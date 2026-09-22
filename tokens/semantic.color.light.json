@@ -1,0 +1,41 @@
+{
+  "text-and-icon": {
+    "primary": { "$type": "color", "$value": "{black.100}", "$description": "Основной текст и иконки на светлых поверхностях" },
+    "secondary": { "$type": "color", "$value": "{black.alpha.64}", "$description": "Второстепенный текст: подписи, подсказки на светлом" },
+    "tertiary": { "$type": "color", "$value": "{black.alpha.36}", "$description": "Третичный текст: плейсхолдеры, подписи к графикам" },
+    "inverse": {
+      "primary": { "$type": "color", "$value": "{white.100}", "$description": "Текст и иконки на тёмных и брендовых поверхностях" },
+      "secondary": { "$type": "color", "$value": "{white.alpha.64}", "$description": "Второстепенный текст на тёмных поверхностях" },
+      "tertiary": { "$type": "color", "$value": "{white.alpha.36}", "$description": "Третичный текст на тёмных поверхностях" }
+    },
+    "status": {
+      "accent": { "$type": "color", "$value": "{green.70}", "$description": "Брендовый акцент в тексте: ссылки, активные пункты" },
+      "positive": { "$type": "color", "$value": "{green-positive.70}", "$description": "Статус success в тексте и иконках" },
+      "error": { "$type": "color", "$value": "{red.80}", "$description": "Статус error в тексте и иконках (старое имя Attention — сверить конвенцию)" },
+      "warning": { "$type": "color", "$value": "{yellow.80}", "$description": "Статус warning в тексте и иконках (старое имя Negative — сверить конвенцию)" }
+    }
+  },
+  "surfaces": {
+    "primary": { "$type": "color", "$value": "{grey.10}", "$description": "Фон страницы в светлой теме" },
+    "secondary": { "$type": "color", "$value": "{white.100}", "$description": "Фон карточек и поднятых поверхностей в светлой теме" },
+    "tertiary": { "$type": "color", "$value": "{grey.10}", "$description": "⚠️ Дублирует surfaces.primary — уточнить роль у дизайнеров (кандидат: grey.20)" },
+    "inverse": {
+      "primary": { "$type": "color", "$value": "{green.70}", "$description": "Брендовые поверхности: CTA-блоки, активные карточки" },
+      "button-secondary": { "$type": "color", "$value": "{green.90}", "$description": "Заливка вторичной кнопки в светлой теме" },
+      "button-primary": { "$type": "color", "$value": "{green.70}", "$description": "Заливка основной кнопки в светлой теме" }
+    },
+    "blur": { "$type": "color", "$value": "{white.alpha.72}", "$description": "Полупрозрачный фон блюр-панелей (стекло) в светлой теме" },
+    "contrast": {
+      "low": { "$type": "color", "$value": "{black.alpha.8}", "$description": "Мягкая подложка: отделение карточек от фона" },
+      "mid": { "$type": "color", "$value": "{black.alpha.12}", "$description": "Ховер-подложка на светлых поверхностях" },
+      "high": { "$type": "color", "$value": "{black.alpha.24}", "$description": "Активная/выделенная подложка на светлом" }
+    }
+  },
+  "stroke": {
+    "primary": { "$type": "color", "$value": "{black.alpha.36}", "$description": "Основные обводки: карточки, инпуты, разделители на светлом" },
+    "accent": { "$type": "color", "$value": "{green.70}", "$description": "Акцентные обводки: фокус, активные состояния" },
+    "inverse": {
+      "accent": { "$type": "color", "$value": "{white.100}", "$description": "Обводки на тёмных и брендовых поверхностях" }
+    }
+  }
+}

@@ -1,0 +1,167 @@
+{
+  "fontFamilies": {
+    "suisse-intl": {
+      "$type": "fontFamilies",
+      "$value": "Suisse Intl",
+      "$description": "Основная гарнитура продукта и маркетинговых страниц"
+    }
+  },
+  "fontWeights": {
+    "regular": {
+      "$type": "fontWeights",
+      "$value": "Regular",
+      "$description": "Основной текст: стили text-*"
+    },
+    "medium": {
+      "$type": "fontWeights",
+      "$value": "Medium",
+      "$description": "Заголовки и акценты: стили heading-*, accent-*"
+    },
+    "semibold": {
+      "$type": "fontWeights",
+      "$value": "SemiBold",
+      "$description": "Резерв: в типографических токенах не используется"
+    }
+  },
+  "fontSize": {
+    "10": {
+      "$type": "fontSizes",
+      "$value": 10,
+      "$description": "Минимальный: сноски, юридические тексты"
+    },
+    "12": {
+      "$type": "fontSizes",
+      "$value": 12
+    },
+    "14": {
+      "$type": "fontSizes",
+      "$value": 14
+    },
+    "16": {
+      "$type": "fontSizes",
+      "$value": 16,
+      "$description": "Базовый размер основного текста"
+    },
+    "18": {
+      "$type": "fontSizes",
+      "$value": 18
+    },
+    "20": {
+      "$type": "fontSizes",
+      "$value": 20
+    },
+    "24": {
+      "$type": "fontSizes",
+      "$value": 24
+    },
+    "30": {
+      "$type": "fontSizes",
+      "$value": 30
+    },
+    "40": {
+      "$type": "fontSizes",
+      "$value": 40
+    },
+    "44": {
+      "$type": "fontSizes",
+      "$value": 44
+    },
+    "56": {
+      "$type": "fontSizes",
+      "$value": 56,
+      "$description": "Максимальный: hero-заголовок desktop"
+    }
+  },
+  "lineHeight": {
+    "14": {
+      "$type": "lineHeights",
+      "$value": 14
+    },
+    "16": {
+      "$type": "lineHeights",
+      "$value": 16
+    },
+    "18": {
+      "$type": "lineHeights",
+      "$value": 18
+    },
+    "20": {
+      "$type": "lineHeights",
+      "$value": 20
+    },
+    "24": {
+      "$type": "lineHeights",
+      "$value": 24
+    },
+    "28": {
+      "$type": "lineHeights",
+      "$value": 28
+    },
+    "32": {
+      "$type": "lineHeights",
+      "$value": 32
+    },
+    "38": {
+      "$type": "lineHeights",
+      "$value": 38
+    },
+    "44": {
+      "$type": "lineHeights",
+      "$value": 44
+    },
+    "48": {
+      "$type": "lineHeights",
+      "$value": 48
+    },
+    "52": {
+      "$type": "lineHeights",
+      "$value": 52
+    },
+    "64": {
+      "$type": "lineHeights",
+      "$value": 64
+    },
+    "68": {
+      "$type": "lineHeights",
+      "$value": 68
+    }
+  },
+  "letterSpacing": {
+    "normal": {
+      "$type": "letterSpacing",
+      "$value": "0%",
+      "$description": "Мелкий текст 14px и меньше"
+    },
+    "tight-xs": {
+      "$type": "letterSpacing",
+      "$value": "-0.5%",
+      "$description": "Заголовки 20–24px"
+    },
+    "tight-sm": {
+      "$type": "letterSpacing",
+      "$value": "-1%",
+      "$description": "Крупные заголовки и текст 16–18px"
+    },
+    "tight-md": {
+      "$type": "letterSpacing",
+      "$value": "-1.5%",
+      "$description": "Desktop Heading M (30px)"
+    },
+    "tight-lg": {
+      "$type": "letterSpacing",
+      "$value": "-2%",
+      "$description": "Mobile Heading XL (40px)"
+    }
+  },
+  "paragraphSpacing": {
+    "none": {
+      "$type": "paragraphSpacing",
+      "$value": 0
+    },
+    "md": {
+      "$type": "paragraphSpacing",
+      "$value": 24,
+      "$description": "Отступ после заголовка Mobile Heading M"
+    }
+  }
+}

@@ -1,0 +1,133 @@
+{
+  "text-and-icon": {
+    "primary": {
+      "$type": "color",
+      "$value": "{white.100}",
+      "$description": "Основной текст и иконки на тёмных поверхностях"
+    },
+    "secondary": {
+      "$type": "color",
+      "$value": "{white.alpha.64}",
+      "$description": "Второстепенный текст на тёмном: подписи, подсказки"
+    },
+    "tertiary": {
+      "$type": "color",
+      "$value": "{white.alpha.36}",
+      "$description": "Третичный текст на тёмном: плейсхолдеры"
+    },
+    "inverse": {
+      "primary": {
+        "$type": "color",
+        "$value": "{black.100}",
+        "$description": "Текст и иконки на светлых поверхностях в тёмной теме (белые кнопки, светлые карточки)"
+      },
+      "secondary": {
+        "$type": "color",
+        "$value": "{black.alpha.64}",
+        "$description": "Второстепенный текст на светлых поверхностях в тёмной теме"
+      },
+      "tertiary": {
+        "$type": "color",
+        "$value": "{black.alpha.36}",
+        "$description": "Третичный текст на светлых поверхностях в тёмной теме"
+      }
+    },
+    "status": {
+      "accent": {
+        "$type": "color",
+        "$value": "{green.60}",
+        "$description": "Брендовый акцент в тексте на тёмном: ссылки, активные пункты"
+      },
+      "positive": {
+        "$type": "color",
+        "$value": "{green-positive.60}",
+        "$description": "Статус success в тексте и иконках на тёмном"
+      },
+      "error": {
+        "$type": "color",
+        "$value": "{red.60}",
+        "$description": "Статус error на тёмном (старое имя Negative)"
+      },
+      "warning": {
+        "$type": "color",
+        "$value": "{yellow.40}",
+        "$description": "Статус warning на тёмном (старое имя Attention)"
+      }
+    }
+  },
+  "surfaces": {
+    "primary": {
+      "$type": "color",
+      "$value": "{grey.120}",
+      "$description": "Фон страницы в тёмной теме"
+    },
+    "secondary": {
+      "$type": "color",
+      "$value": "{grey.100}",
+      "$description": "Фон карточек в тёмной теме"
+    },
+    "tertiary": {
+      "$type": "color",
+      "$value": "{grey.90}",
+      "$description": "Поднятые поверхности, третий уровень фона в тёмной теме"
+    },
+    "inverse": {
+      "primary": {
+        "$type": "color",
+        "$value": "{green.80}",
+        "$description": "Брендовые поверхности в тёмной теме: CTA-блоки, активные карточки"
+      },
+      "button-primary": {
+        "$type": "color",
+        "$value": "{white.100}",
+        "$description": "Заливка основной кнопки в тёмной теме"
+      },
+      "button-secondary": {
+        "$type": "color",
+        "$value": "{grey.30}",
+        "$description": "Заливка вторичной кнопки в тёмной теме"
+      }
+    },
+    "blur": {
+      "$type": "color",
+      "$value": "{white.alpha.12}",
+      "$description": "Полупрозрачный фон блюр-панелей (стекло) в тёмной теме"
+    },
+    "contrast": {
+      "low": {
+        "$type": "color",
+        "$value": "{white.alpha.12}",
+        "$description": "Мягкая светлая подложка: отделение карточек от тёмного фона"
+      },
+      "mid": {
+        "$type": "color",
+        "$value": "{white.alpha.24}",
+        "$description": "Ховер-подложка на тёмных поверхностях"
+      },
+      "high": {
+        "$type": "color",
+        "$value": "{white.alpha.36}",
+        "$description": "Активная/выделенная подложка на тёмном"
+      }
+    }
+  },
+  "stroke": {
+    "primary": {
+      "$type": "color",
+      "$value": "{white.alpha.36}",
+      "$description": "Основные обводки на тёмном: карточки, инпуты, разделители"
+    },
+    "accent": {
+      "$type": "color",
+      "$value": "{green.70}",
+      "$description": "Акцентные обводки на тёмном: фокус, активные состояния"
+    },
+    "inverse": {
+      "accent": {
+        "$type": "color",
+        "$value": "{white.100}",
+        "$description": "Обводки на светлых и брендовых поверхностях в тёмной теме"
+      }
+    }
+  }
+}

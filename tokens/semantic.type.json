@@ -1,0 +1,294 @@
+{
+  "desktop": {
+    "heading-xl": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "{fontFamilies.suisse-intl}",
+        "fontWeight": "{fontWeights.medium}",
+        "fontSize": "{fontSize.56}",
+        "lineHeight": "{lineHeight.68}",
+        "letterSpacing": "{letterSpacing.tight-sm}",
+        "paragraphSpacing": "{paragraphSpacing.none}"
+      },
+      "$description": "Desktop: главный заголовок страницы/hero, один на страницу"
+    },
+    "heading-l": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "{fontFamilies.suisse-intl}",
+        "fontWeight": "{fontWeights.medium}",
+        "fontSize": "{fontSize.44}",
+        "lineHeight": "{lineHeight.52}",
+        "letterSpacing": "{letterSpacing.tight-sm}",
+        "paragraphSpacing": "{paragraphSpacing.none}"
+      },
+      "$description": "Desktop: заголовок крупной секции лендинга"
+    },
+    "heading-m": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "{fontFamilies.suisse-intl}",
+        "fontWeight": "{fontWeights.medium}",
+        "fontSize": "{fontSize.30}",
+        "lineHeight": "{lineHeight.38}",
+        "letterSpacing": "{letterSpacing.tight-md}",
+        "paragraphSpacing": "{paragraphSpacing.none}"
+      },
+      "$description": "Desktop: заголовок средней секции"
+    },
+    "heading-s": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "{fontFamilies.suisse-intl}",
+        "fontWeight": "{fontWeights.medium}",
+        "fontSize": "{fontSize.24}",
+        "lineHeight": "{lineHeight.32}",
+        "letterSpacing": "{letterSpacing.tight-xs}",
+        "paragraphSpacing": "{paragraphSpacing.none}"
+      },
+      "$description": "Desktop: подзаголовок секции, заголовок карточки"
+    },
+    "text-l": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "{fontFamilies.suisse-intl}",
+        "fontWeight": "{fontWeights.regular}",
+        "fontSize": "{fontSize.18}",
+        "lineHeight": "{lineHeight.28}",
+        "letterSpacing": "{letterSpacing.tight-sm}",
+        "paragraphSpacing": "{paragraphSpacing.none}"
+      },
+      "$description": "Desktop: лид-абзац, вводный текст секции"
+    },
+    "text-m": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "{fontFamilies.suisse-intl}",
+        "fontWeight": "{fontWeights.regular}",
+        "fontSize": "{fontSize.16}",
+        "lineHeight": "{lineHeight.24}",
+        "letterSpacing": "{letterSpacing.tight-sm}",
+        "paragraphSpacing": "{paragraphSpacing.none}"
+      },
+      "$description": "Desktop: основной текст абзацев и карточек"
+    },
+    "text-s": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "{fontFamilies.suisse-intl}",
+        "fontWeight": "{fontWeights.regular}",
+        "fontSize": "{fontSize.14}",
+        "lineHeight": "{lineHeight.20}",
+        "letterSpacing": "{letterSpacing.normal}",
+        "paragraphSpacing": "{paragraphSpacing.none}"
+      },
+      "$description": "Desktop: второстепенный текст, списки"
+    },
+    "text-xs": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "{fontFamilies.suisse-intl}",
+        "fontWeight": "{fontWeights.regular}",
+        "fontSize": "{fontSize.12}",
+        "lineHeight": "{lineHeight.14}",
+        "letterSpacing": "{letterSpacing.normal}",
+        "paragraphSpacing": "{paragraphSpacing.none}"
+      },
+      "$description": "Desktop: подписи, дисклеймеры, футер"
+    },
+    "accent-l": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "{fontFamilies.suisse-intl}",
+        "fontWeight": "{fontWeights.medium}",
+        "fontSize": "{fontSize.18}",
+        "lineHeight": "{lineHeight.28}",
+        "letterSpacing": "{letterSpacing.tight-sm}",
+        "paragraphSpacing": "{paragraphSpacing.none}"
+      },
+      "$description": "Desktop: акцентный текст, ссылки, крупные подписи кнопок"
+    },
+    "accent-m": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "{fontFamilies.suisse-intl}",
+        "fontWeight": "{fontWeights.medium}",
+        "fontSize": "{fontSize.16}",
+        "lineHeight": "{lineHeight.24}",
+        "letterSpacing": "{letterSpacing.normal}",
+        "paragraphSpacing": "{paragraphSpacing.none}"
+      },
+      "$description": "Desktop: подписи кнопок и активных элементов"
+    },
+    "accent-s": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "{fontFamilies.suisse-intl}",
+        "fontWeight": "{fontWeights.medium}",
+        "fontSize": "{fontSize.14}",
+        "lineHeight": "{lineHeight.20}",
+        "letterSpacing": "{letterSpacing.normal}",
+        "paragraphSpacing": "{paragraphSpacing.none}"
+      },
+      "$description": "Desktop: акцентные подписи малого размера"
+    },
+    "accent-xs": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "{fontFamilies.suisse-intl}",
+        "fontWeight": "{fontWeights.medium}",
+        "fontSize": "{fontSize.12}",
+        "lineHeight": "{lineHeight.14}",
+        "letterSpacing": "{letterSpacing.normal}",
+        "paragraphSpacing": "{paragraphSpacing.none}"
+      },
+      "$description": "Desktop: мелкие акцентные подписи, бейджи"
+    }
+  },
+  "mobile": {
+    "heading-xl": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "{fontFamilies.suisse-intl}",
+        "fontWeight": "{fontWeights.medium}",
+        "fontSize": "{fontSize.40}",
+        "lineHeight": "{lineHeight.44}",
+        "letterSpacing": "{letterSpacing.tight-lg}",
+        "paragraphSpacing": "{paragraphSpacing.none}"
+      },
+      "$description": "Mobile: главный заголовок страницы/hero"
+    },
+    "heading-l": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "{fontFamilies.suisse-intl}",
+        "fontWeight": "{fontWeights.medium}",
+        "fontSize": "{fontSize.30}",
+        "lineHeight": "{lineHeight.38}",
+        "letterSpacing": "{letterSpacing.tight-sm}",
+        "paragraphSpacing": "{paragraphSpacing.none}"
+      },
+      "$description": "Mobile: заголовок крупной секции"
+    },
+    "heading-m": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "{fontFamilies.suisse-intl}",
+        "fontWeight": "{fontWeights.medium}",
+        "fontSize": "{fontSize.24}",
+        "lineHeight": "{lineHeight.28}",
+        "letterSpacing": "{letterSpacing.tight-sm}",
+        "paragraphSpacing": "{paragraphSpacing.md}"
+      },
+      "$description": "Mobile: заголовок средней секции"
+    },
+    "heading-s": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "{fontFamilies.suisse-intl}",
+        "fontWeight": "{fontWeights.medium}",
+        "fontSize": "{fontSize.20}",
+        "lineHeight": "{lineHeight.24}",
+        "letterSpacing": "{letterSpacing.tight-xs}",
+        "paragraphSpacing": "{paragraphSpacing.none}"
+      },
+      "$description": "Mobile: подзаголовок, заголовок карточки"
+    },
+    "text-l": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "{fontFamilies.suisse-intl}",
+        "fontWeight": "{fontWeights.regular}",
+        "fontSize": "{fontSize.16}",
+        "lineHeight": "{lineHeight.24}",
+        "letterSpacing": "{letterSpacing.tight-sm}",
+        "paragraphSpacing": "{paragraphSpacing.none}"
+      },
+      "$description": "Mobile: лид-абзац, вводный текст"
+    },
+    "text-m": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "{fontFamilies.suisse-intl}",
+        "fontWeight": "{fontWeights.regular}",
+        "fontSize": "{fontSize.14}",
+        "lineHeight": "{lineHeight.20}",
+        "letterSpacing": "{letterSpacing.tight-sm}",
+        "paragraphSpacing": "{paragraphSpacing.none}"
+      },
+      "$description": "Mobile: основной текст абзацев"
+    },
+    "text-s": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "{fontFamilies.suisse-intl}",
+        "fontWeight": "{fontWeights.regular}",
+        "fontSize": "{fontSize.12}",
+        "lineHeight": "{lineHeight.16}",
+        "letterSpacing": "{letterSpacing.normal}",
+        "paragraphSpacing": "{paragraphSpacing.none}"
+      },
+      "$description": "Mobile: второстепенный текст, списки"
+    },
+    "text-xs": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "{fontFamilies.suisse-intl}",
+        "fontWeight": "{fontWeights.regular}",
+        "fontSize": "{fontSize.10}",
+        "lineHeight": "{lineHeight.14}",
+        "letterSpacing": "{letterSpacing.normal}",
+        "paragraphSpacing": "{paragraphSpacing.none}"
+      },
+      "$description": "Mobile: подписи, дисклеймеры"
+    },
+    "accent-l": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "{fontFamilies.suisse-intl}",
+        "fontWeight": "{fontWeights.medium}",
+        "fontSize": "{fontSize.16}",
+        "lineHeight": "{lineHeight.20}",
+        "letterSpacing": "{letterSpacing.tight-sm}",
+        "paragraphSpacing": "{paragraphSpacing.none}"
+      },
+      "$description": "Mobile: акцентный текст, ссылки"
+    },
+    "accent-m": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "{fontFamilies.suisse-intl}",
+        "fontWeight": "{fontWeights.medium}",
+        "fontSize": "{fontSize.14}",
+        "lineHeight": "{lineHeight.20}",
+        "letterSpacing": "{letterSpacing.tight-sm}",
+        "paragraphSpacing": "{paragraphSpacing.none}"
+      },
+      "$description": "Mobile: подписи кнопок"
+    },
+    "accent-s": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "{fontFamilies.suisse-intl}",
+        "fontWeight": "{fontWeights.medium}",
+        "fontSize": "{fontSize.12}",
+        "lineHeight": "{lineHeight.16}",
+        "letterSpacing": "{letterSpacing.normal}",
+        "paragraphSpacing": "{paragraphSpacing.none}"
+      },
+      "$description": "Mobile: акцентные подписи малого размера"
+    },
+    "accent-xs": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "{fontFamilies.suisse-intl}",
+        "fontWeight": "{fontWeights.medium}",
+        "fontSize": "{fontSize.10}",
+        "lineHeight": "{lineHeight.14}",
+        "letterSpacing": "{letterSpacing.normal}",
+        "paragraphSpacing": "{paragraphSpacing.none}"
+      },
+      "$description": "Mobile: мелкие акцентные подписи, бейджи"
+    }
+  }
+}

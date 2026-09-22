@@ -1,0 +1,92 @@
+{
+  "space": {
+    "4": {
+      "$type": "spacing",
+      "$value": "4",
+      "$description": "Минимальный зазор: иконка и подпись внутри контрола"
+    },
+    "8": {
+      "$type": "spacing",
+      "$value": "8",
+      "$description": "Зазор между элементами компактных контролов"
+    },
+    "12": {
+      "$type": "spacing",
+      "$value": "12",
+      "$description": "Внутренние отступы малых контролов (кнопки sm, инпуты)"
+    },
+    "16": {
+      "$type": "spacing",
+      "$value": "16",
+      "$description": "Базовый внутренний отступ компонентов (кнопки md, карточки)"
+    },
+    "20": {
+      "$type": "spacing",
+      "$value": "20",
+      "$description": "Отступ между группами компонентов"
+    },
+    "24": {
+      "$type": "spacing",
+      "$value": "24",
+      "$description": "Отступы внутри карточек, между блоками компонента"
+    },
+    "32": {
+      "$type": "spacing",
+      "$value": "32",
+      "$description": "Отступ между самостоятельными блоками внутри секции"
+    }
+  },
+  "radius": {
+    "2": {
+      "$type": "borderRadius",
+      "$value": "2",
+      "$description": "Мелкие теги, чипы"
+    },
+    "4": {
+      "$type": "borderRadius",
+      "$value": "4",
+      "$description": "Малые контролы: чекбоксы, кнопки sm"
+    },
+    "8": {
+      "$type": "borderRadius",
+      "$value": "8",
+      "$description": "Стандартные контролы: кнопки, инпуты"
+    },
+    "12": {
+      "$type": "borderRadius",
+      "$value": "12",
+      "$description": "Карточки и модальные окна"
+    },
+    "16": {
+      "$type": "borderRadius",
+      "$value": "16",
+      "$description": "Крупные карточки и баннеры"
+    },
+    "20": {
+      "$type": "borderRadius",
+      "$value": "20",
+      "$description": "Hero-блоки, контейнеры изображений"
+    },
+    "24": {
+      "$type": "borderRadius",
+      "$value": "24"
+    },
+    "28": {
+      "$type": "borderRadius",
+      "$value": "28"
+    },
+    "32": {
+      "$type": "borderRadius",
+      "$value": "32"
+    },
+    "36": {
+      "$type": "borderRadius",
+      "$value": "36"
+    },
+    "48": {
+      "$type": "borderRadius",
+      "$value": "48",
+      "$description": "Декоративные контейнеры, плашки"
+    }
+  }
+}

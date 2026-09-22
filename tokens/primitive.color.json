@@ -1,0 +1,262 @@
+{
+  "black": {
+    "100": {
+      "$type": "color",
+      "$value": "#1a1a1a",
+      "$description": "Базовый чёрный: текст и тёмные поверхности. Не чисто чёрный — смягчён"
+    },
+    "alpha": {
+      "8": {
+        "$type": "color",
+        "$value": "#1a1a1a14",
+        "$description": "black.100 с прозрачностью 8%: лёгкие оверлеи на светлом"
+      },
+      "12": {
+        "$type": "color",
+        "$value": "#1a1a1a1f",
+        "$description": "black.100 с прозрачностью 12%: ховер-подложки на светлом"
+      },
+      "24": {
+        "$type": "color",
+        "$value": "#1a1a1a3d",
+        "$description": "black.100 с прозрачностью 24%: разделители, скримы"
+      },
+      "36": {
+        "$type": "color",
+        "$value": "#1a1a1a5c",
+        "$description": "black.100 с прозрачностью 36%: плотные оверлеи"
+      },
+      "64": {
+        "$type": "color",
+        "$value": "#1a1a1aa3",
+        "$description": "black.100 с прозрачностью 64%: модальные скримы"
+      }
+    }
+  },
+  "white": {
+    "100": {
+      "$type": "color",
+      "$value": "#ffffff",
+      "$description": "Белый: фоны светлой темы, текст и иконки на тёмном"
+    },
+    "alpha": {
+      "12": {
+        "$type": "color",
+        "$value": "#ffffff1f",
+        "$description": "white.100 с прозрачностью 12%: ховер-подложки на тёмном"
+      },
+      "24": {
+        "$type": "color",
+        "$value": "#ffffff3d",
+        "$description": "white.100 с прозрачностью 24%: разделители на тёмном"
+      },
+      "36": {
+        "$type": "color",
+        "$value": "#ffffff5c",
+        "$description": "white.100 с прозрачностью 36%: контрастные оверлеи на тёмном"
+      },
+      "64": {
+        "$type": "color",
+        "$value": "#ffffffa3",
+        "$description": "white.100 с прозрачностью 64%: приглушённый текст на тёмном"
+      },
+      "72": {
+        "$type": "color",
+        "$value": "#ffffffb8",
+        "$description": "white.100 с прозрачностью 72%: вторичный текст на тёмном"
+      }
+    }
+  },
+  "grey": {
+    "10": {
+      "$type": "color",
+      "$value": "#f4f4f4",
+      "$description": "Светло-серый: фоны подложек и секций в светлой теме"
+    },
+    "20": {
+      "$type": "color",
+      "$value": "#e8e8e8",
+      "$description": "Светло-серый: обводки и разделители в светлой теме"
+    },
+    "30": {
+      "$type": "color",
+      "$value": "#dbdbdb",
+      "$description": "Светло-серый: контрастные обводки в светлой теме"
+    },
+    "90": {
+      "$type": "color",
+      "$value": "#3c454b",
+      "$description": "Тёмно-серый: самый светлый из тёмной шкалы, обводки на тёмном"
+    },
+    "100": {
+      "$type": "color",
+      "$value": "#283136",
+      "$description": "Тёмно-серый: поднятые поверхности в тёмной теме"
+    },
+    "110": {
+      "$type": "color",
+      "$value": "#1e262c",
+      "$description": "Тёмно-серый: карточки в тёмной теме"
+    },
+    "120": {
+      "$type": "color",
+      "$value": "#192025",
+      "$description": "Тёмно-серый: поверхности секций в тёмной теме"
+    },
+    "130": {
+      "$type": "color",
+      "$value": "#141c21",
+      "$description": "Тёмно-серый: фон страницы в тёмной теме"
+    }
+  },
+  "green": {
+    "60": {
+      "$type": "color",
+      "$value": "#3bb643",
+      "$description": "Брендовый зелёный, светлый шаг: ховер на тёмном фоне"
+    },
+    "70": {
+      "$type": "color",
+      "$value": "#19aa1e",
+      "$description": "Брендовый зелёный 2GIS: основные CTA и активные состояния"
+    },
+    "80": {
+      "$type": "color",
+      "$value": "#12951a",
+      "$description": "Брендовый зелёный, тёмный шаг: нажатие"
+    },
+    "90": {
+      "$type": "color",
+      "$value": "#00830c",
+      "$description": "Брендовый зелёный, самый тёмный: акценты на светлом"
+    },
+    "alpha": {
+      "70-12": {
+        "$type": "color",
+        "$value": "#19aa1e1f",
+        "$description": "green.70 с прозрачностью 12%: подложки под акцентом"
+      }
+    }
+  },
+  "green-positive": {
+    "60": {
+      "$type": "color",
+      "$value": "#71bb56",
+      "$description": "Статус success, светлый шаг"
+    },
+    "70": {
+      "$type": "color",
+      "$value": "#51a52c",
+      "$description": "Статус success: позитивные индикаторы, отличать от брендового green"
+    },
+    "80": {
+      "$type": "color",
+      "$value": "#3f9015",
+      "$description": "Статус success, тёмный шаг"
+    },
+    "alpha": {
+      "70-12": {
+        "$type": "color",
+        "$value": "#5ca2411f",
+        "$description": "⚠️ База #5ca241 НЕ совпадает с green-positive.70 (#51a52c) — сверить с дизайнерами"
+      }
+    }
+  },
+  "red": {
+    "60": {
+      "$type": "color",
+      "$value": "#f97b76",
+      "$description": "Статус error, светлый шаг: тёмная тема"
+    },
+    "70": {
+      "$type": "color",
+      "$value": "#f6605c",
+      "$description": "Статус error: основной"
+    },
+    "80": {
+      "$type": "color",
+      "$value": "#ea4142",
+      "$description": "Статус error, тёмный шаг: светлая тема"
+    },
+    "alpha": {
+      "80-12": {
+        "$type": "color",
+        "$value": "#f133391f",
+        "$description": "⚠️ База #f13339 НЕ совпадает с red.80 (#ea4142) — сверить с дизайнерами"
+      }
+    }
+  },
+  "yellow": {
+    "40": {
+      "$type": "color",
+      "$value": "#ffb814",
+      "$description": "Статус warning, светлый шаг"
+    },
+    "50": {
+      "$type": "color",
+      "$value": "#eca907",
+      "$description": "Статус warning: основной"
+    },
+    "60": {
+      "$type": "color",
+      "$value": "#d89b05",
+      "$description": "Статус warning, шаг темнее"
+    },
+    "70": {
+      "$type": "color",
+      "$value": "#c18711",
+      "$description": "Статус warning для светлых фонов"
+    },
+    "80": {
+      "$type": "color",
+      "$value": "#b27e03",
+      "$description": "Статус warning, самый тёмный"
+    },
+    "alpha": {
+      "70-12": {
+        "$type": "color",
+        "$value": "#c187111f",
+        "$description": "yellow.70 с прозрачностью 12%: подложки под warning"
+      }
+    }
+  },
+  "blue": {
+    "40": {
+      "$type": "color",
+      "$value": "#a9c7ff",
+      "$description": "Инфо-синий, светлый шаг"
+    },
+    "50": {
+      "$type": "color",
+      "$value": "#87aef6",
+      "$description": "Инфо-синий, шаг светлее основного"
+    },
+    "60": {
+      "$type": "color",
+      "$value": "#608fee",
+      "$description": "Инфо-синий: ссылки и подсказки на тёмном"
+    },
+    "70": {
+      "$type": "color",
+      "$value": "#446ae4",
+      "$description": "Инфо-синий: основной (ссылки, инфо-состояния)"
+    },
+    "80": {
+      "$type": "color",
+      "$value": "#2e52de",
+      "$description": "Инфо-синий, тёмный шаг"
+    },
+    "90": {
+      "$type": "color",
+      "$value": "#164ec1",
+      "$description": "Инфо-синий, самый тёмный"
+    },
+    "alpha": {
+      "70-12": {
+        "$type": "color",
+        "$value": "#3d65f31f",
+        "$description": "⚠️ База #3d65f3 НЕ совпадает с blue.70 (#446ae4) — сверить с дизайнерами"
+      }
+    }
+  }
+}

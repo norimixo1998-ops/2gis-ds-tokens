@@ -1,0 +1,38 @@
+{
+  "section": {
+    "mobile": {
+      "sm": {
+        "$type": "spacing",
+        "$value": "36",
+        "$description": "Mobile: отступ между связными блоками внутри секции"
+      },
+      "md": {
+        "$type": "spacing",
+        "$value": "64",
+        "$description": "Mobile: отступ между секциями страницы"
+      }
+    },
+    "desktop": {
+      "sm": {
+        "$type": "spacing",
+        "$value": "48",
+        "$description": "Desktop: отступ между связными блоками внутри секции"
+      },
+      "md": {
+        "$type": "spacing",
+        "$value": "64",
+        "$description": "Desktop: стандартный отступ между секциями"
+      },
+      "lg": {
+        "$type": "spacing",
+        "$value": "96",
+        "$description": "Desktop: отступ между крупными тематическими секциями"
+      },
+      "xl": {
+        "$type": "spacing",
+        "$value": "120",
+        "$description": "Desktop: отступ вокруг hero и финального CTA"
+      }
+    }
+  }
+}

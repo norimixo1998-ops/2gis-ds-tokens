@@ -1,0 +1,18 @@
+{
+  "light": [
+    "primitive.color",
+    "primitive.type",
+    "primitive.metrics",
+    "semantic.space",
+    "semantic.type",
+    "semantic.color.light"
+  ],
+  "dark": [
+    "primitive.color",
+    "primitive.type",
+    "primitive.metrics",
+    "semantic.space",
+    "semantic.type",
+    "semantic.color.dark"
+  ]
+}
