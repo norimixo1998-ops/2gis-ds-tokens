@@ -1,0 +1,11 @@
+{
+  "name": "2gis-ds-tokens",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Design tokens source of truth for 2GIS web projects (dev.2gis.ru)",
+  "scripts": {
+    "qa": "node scripts/qa.js",
+    "build": "node scripts/build.js",
+    "prepare": "node scripts/build.js"
+  }
+}
