@@ -8,6 +8,7 @@
       "secondary": { "$type": "color", "$value": "{white.alpha.64}", "$description": "Второстепенный текст на тёмных поверхностях" },
       "tertiary": { "$type": "color", "$value": "{white.alpha.36}", "$description": "Третичный текст на тёмных поверхностях" }
     },
+    "on-brand": { "$type": "color", "$value": "{white.100}", "$description": "Текст и иконки на брендовых зелёных поверхностях (primary-кнопки, brand-band) в обеих темах" },
     "status": {
       "accent": { "$type": "color", "$value": "{green.70}", "$description": "Брендовый акцент в тексте: ссылки, активные пункты" },
       "positive": { "$type": "color", "$value": "{green-positive.70}", "$description": "Статус success в тексте и иконках" },

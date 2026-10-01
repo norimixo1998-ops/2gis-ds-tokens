@@ -14,6 +14,7 @@ primitive.* — справочная информация о шкалах, на�
 | text-and-icon.inverse.primary | #ffffff | #1a1a1a | Текст и иконки на тёмных и брендовых поверхностях |
 | text-and-icon.inverse.secondary | #ffffffa3 | #1a1a1aa3 | Второстепенный текст на тёмных поверхностях |
 | text-and-icon.inverse.tertiary | #ffffff5c | #1a1a1a5c | Третичный текст на тёмных поверхностях |
+| text-and-icon.on-brand | #ffffff | #ffffff | Текст и иконки на брендовых зелёных поверхностях (primary-кнопки, brand-band) в обеих темах |
 | text-and-icon.status.accent | #19aa1e | #3bb643 | Брендовый акцент в тексте: ссылки, активные пункты |
 | text-and-icon.status.positive | #51a52c | #71bb56 | Статус success в тексте и иконках |
 | text-and-icon.status.error | #ea4142 | #f97b76 | Статус error в тексте и иконках (старое имя Attention — сверить конвенцию) |

@@ -5,6 +5,7 @@
       "$value": "{white.100}",
       "$description": "Основной текст и иконки на тёмных поверхностях"
     },
+    "on-brand": { "$type": "color", "$value": "{white.100}", "$description": "Текст и иконки на брендовых зелёных поверхностях (primary-кнопки, brand-band) в обеих темах" },
     "secondary": {
       "$type": "color",
       "$value": "{white.alpha.64}",

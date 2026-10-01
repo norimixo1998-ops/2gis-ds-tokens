@@ -127,6 +127,8 @@ components:
     textColor: "{colors.ink-secondary}"
     typography: "{typography.body-sm}"
     padding: "{spacing.section-desktop-md} {spacing.2xl}"
+
+**header** — канонический блок из `patterns/header.md`; не проектировать заново, копировать разметку и стили как есть.
 ---
 
 ## Overview
@@ -200,7 +202,7 @@ Mobile-шкала заголовков: 40/44, 30/38, 24/28, 20/24 (tracking д�
 | Token | Value | Use |
 |---|---|---|
 | rounded.sm | 4px | Чекбоксы, малые контролы |
-| rounded.md | 8px | Кнопки, инпуты |
+| rounded.md | 12px | Кнопки, инпуты |
 | rounded.lg | 12px | Карточки, модалки |
 | rounded.xl | 16px | Крупные карточки, баннеры |
 | rounded.3xl | 24px | Hero-блоки, медиа-контейнеры |
