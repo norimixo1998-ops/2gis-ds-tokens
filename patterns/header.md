@@ -26,7 +26,9 @@
   - Подгруппа «кнопки»: зазор 12.
     - Secondary: высота 48, padding 12/28, radius 12.
     - Primary: высота 48, padding 12/16, min-width 190, radius 12.
-- **Строка 2** — nav-панель: отступ сверху 24, высота 80, radius 16, padding-inline 28, фон `surfaces.secondary`.
+- **Строка 2** — nav-панель: отступ сверху 24, высота СТРОГО 80px
+  (не через padding: через `height` + `align-items: center`), radius 16,
+  padding-inline 28, фон `surfaces.secondary`.
   - «Все продукты» + шеврон (слева).
   - Первичная навигация (Бизнесу / Госсектору / Партнерам), зазор 32.
   - Вторичная навигация (О данных / Кейсы / Контакты), зазор 24, справа.
@@ -121,3 +123,152 @@
     </ul>
   </nav>
 </header>
+```
+
+## Эталонные стили
+
+Все значения — через `var(--…)` из `dist/tokens.css`. Никаких hex, никаких темовых условий кроме переключения лого.
+
+```css
+.ds-header { background: transparent; }
+.ds-header__top, .ds-navpanel {
+  max-width: 1200px;
+  margin-inline: auto;
+  padding-inline: var(--space-16);
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Строка 1 */
+.ds-header__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 56px;
+}
+.ds-logo__light, .ds-logo__dark { display: block; height: 54px; width: auto; }
+.ds-logo__dark  { display: none; }
+[data-theme="dark"] .ds-logo__dark  { display: block; }
+[data-theme="dark"] .ds-logo__light { display: none; }
+
+.ds-header__actions { display: flex; align-items: center; gap: var(--space-32); }
+.ds-header__group   { display: flex; align-items: center; gap: var(--space-8); }
+.ds-header__group--cta { gap: var(--space-12); }
+
+.ds-search {
+  display: flex; align-items: center; gap: var(--space-4);
+  padding: var(--space-12) var(--space-8);
+  background: var(--surfaces-blur);
+  border-radius: var(--radius-12);
+  color: var(--text-and-icon-secondary);
+}
+.ds-search input {
+  width: 156px; border: 0; background: transparent; outline: 0;
+  color: var(--text-and-icon-primary);
+  font: 400 14px/20px "Suisse Intl";
+}
+.ds-search input::placeholder { color: var(--text-and-icon-secondary); }
+
+.ds-lang {
+  display: flex; align-items: center; gap: var(--space-4);
+  padding: var(--space-8); border: 0; background: transparent;
+  color: var(--text-and-icon-primary);
+  font: 400 16px/24px "Suisse Intl";
+  cursor: pointer;
+}
+
+.ds-btn {
+  height: 48px; border: 0; border-radius: var(--radius-12);
+  cursor: pointer; padding: var(--space-12) var(--space-28);
+  font: 500 16px/24px "Suisse Intl";
+}
+.ds-btn--secondary {
+  background: var(--surfaces-contrast-low);
+  color: var(--text-and-icon-primary);
+}
+.ds-btn--primary {
+  background: var(--surfaces-inverse-primary);
+  color: var(--text-and-icon-on-brand);
+  min-width: 190px;
+  padding-inline: var(--space-16);
+}
+
+/* Строка 2: nav-панель. Высота СТРОГО 80px, центрирование через align-items,
+   НЕ заменять height на padding. */
+.ds-navpanel {
+  margin-top: var(--space-24);
+  height: 80px;
+  align-items: center;
+  border-radius: var(--radius-16);
+  background: var(--surfaces-secondary);
+  display: flex;
+  gap: var(--space-32);
+  padding-inline: 28px;
+}
+[data-theme="light"] .ds-navpanel {
+  border: 1px solid var(--stroke-primary);
+}
+.ds-navpanel__products {
+  display: flex; align-items: center; gap: var(--space-8);
+  border: 0; background: transparent; cursor: pointer;
+  color: var(--text-and-icon-primary);
+  font: 500 16px/24px "Suisse Intl";
+}
+.ds-navpanel__primary, .ds-navpanel__secondary {
+  display: flex; list-style: none; margin: 0; padding: 0;
+}
+.ds-navpanel__primary  { gap: var(--space-32); }
+.ds-navpanel__secondary { gap: var(--space-24); margin-left: auto; }
+.ds-navpanel a {
+  text-decoration: none;
+  color: var(--text-and-icon-secondary);
+  font: 500 16px/24px "Suisse Intl";
+}
+.ds-navpanel a:hover,
+.ds-navpanel__products:hover { color: var(--text-and-icon-primary); }
+
+/* Бургер: виден только на mobile */
+.ds-burger { display: none; }
+.ds-icon { width: 24px; height: 24px; }
+
+/* Mobile */
+@media (max-width: 767px) {
+  .ds-header__top {
+    height: 64px;
+    padding-inline: var(--space-16);
+    background: var(--surfaces-secondary);
+  }
+  .ds-logo__light, .ds-logo__dark { height: 40px; }
+  .ds-header__actions, .ds-navpanel { display: none; }
+  .ds-burger {
+    display: flex;
+    align-items: center; justify-content: center;
+    width: 32px; height: 32px;
+    border: 0; background: transparent;
+    color: var(--text-and-icon-primary);
+    cursor: pointer;
+  }
+}
+```
+
+## Do / Don't
+
+### Do
+- Копировать разметку и стили целиком; менять только контент (`<a href="…">`, тексты кнопок).
+- Темы переключаются автоматически через `[data-theme]` на корне приложения.
+- Использовать только переменные `var(--…)` из `dist/tokens.css`.
+- Гарнитура — строго `"Suisse Intl"`.
+
+### Don't
+- Не добавлять тени, pill-радиусы, свои кегли и цвета.
+- Не реализовывать содержимое мобильного меню — оно в `patterns/header-mobile-menu.md`.
+- Не перекрашивать лого: темы меняются файлом.
+- Не делать nav-панель sticky без отдельного решения.
+- Не заменять фиксированную высоту nav-панели 80px на padding — высота и вертикальное центрирование обязательны.
+
+## Допущения (сверить с дизайнерами)
+
+1. **Light: nav-панель с обводкой** `stroke.primary` 1px. В dark-экспорте обводки нет; для light добавлена для читаемости на белом фоне.
+2. **Sticky-поведение** не описано — считать статичным до отдельного решения.
+3. **Light: blur на сером фоне** (`#FFFFFFB8`) даёт еле заметную подложку; если визуально слабо — заменить на `surfaces.contrast.low` с непрозрачным серым.
+4. **Mobile: статус-бар** в экспорте имел фон `#283136`. Для light — фон статус-бара должен быть `#FFFFFF`, чтобы хедер сливался.
