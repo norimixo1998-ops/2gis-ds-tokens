@@ -1,0 +1,48 @@
+<header class="site-header">
+  <!-- Верхняя строка: логотип + поиск + язык + кнопки -->
+  <div class="header-top">
+    <a href="/" class="logo" aria-label="2ГИС — на главную">
+      <img src="assets/logo/2gis-logo.svg" alt="2ГИС" width="56" height="56" />
+    </a>
+
+    <div class="header-search">
+      <svg class="search-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+        <circle cx="10.5" cy="10.5" r="7" stroke="currentColor" stroke-width="2"/>
+        <line x1="16" y1="16" x2="22" y2="22" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+      </svg>
+      <input type="search" placeholder="Поиск" aria-label="Поиск по сайту" />
+    </div>
+
+    <button class="lang-selector" aria-label="Выбрать язык">
+      <svg class="globe-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+        <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="2"/>
+        <ellipse cx="12" cy="12" rx="4" ry="9" stroke="currentColor" stroke-width="2"/>
+        <line x1="3" y1="12" x2="21" y2="12" stroke="currentColor" stroke-width="2"/>
+      </svg>
+      <span>RU</span>
+      <svg class="chevron" width="24" height="24" viewBox="0 0 24 24" fill="none">
+        <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+      </svg>
+    </button>
+
+    <button class="button-secondary">Контакты</button>
+    <button class="button-primary">Оставить заявку</button>
+  </div>
+
+  <!-- Нижняя панель: навигация -->
+  <nav class="header-nav" aria-label="Основная навигация">
+    <button class="nav-dropdown">
+      <span>Все продукты</span>
+      <svg class="chevron" width="24" height="24" viewBox="0 0 24 24" fill="none">
+        <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+      </svg>
+    </button>
+    <a href="#">Бизнесу</a>
+    <a href="#">Госсектору</a>
+    <a href="#">Партнёрам</a>
+    <a href="#">Документация</a>
+    <a href="#">О данных</a>
+    <a href="#">Кейсы</a>
+    <a href="#">Контакты</a>
+  </nav>
+</header>

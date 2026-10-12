@@ -1,4 +1,4 @@
-# 2GIS Design System — Dark Theme
+# 2GIS Design System — Dark Theme (для AI)
 
 ## Colors
 
@@ -10,23 +10,24 @@
 
 ### Surfaces
 - Canvas (фон страницы): `#192025`
-- Canvas Card (карточки, инпуты): `#283136`
+- Canvas Card (карточки, инпуты, nav-панель): `#283136`
 - Canvas Raised (поднятые элементы): `#3C454B`
+- Search/Button Secondary Background: `rgba(255,255,255,0.12)`
 
 ### Text
 - Ink (основной): `#FFFFFF`
-- Ink Secondary (подписи): `#FFFFFFA3` (64%)
-- Ink Tertiary (плейсхолдеры): `#FFFFFF5C` (36%)
+- Ink Secondary (подписи, ссылки навигации): `rgba(255,255,255,0.64)`
+- Ink Tertiary (плейсхолдеры): `rgba(255,255,255,0.36)`
 
 ### Other
-- Border: `#FFFFFF5C` (36%)
+- Border: `rgba(255,255,255,0.36)`
 - Positive: `#71BB56`
 - Warning: `#FFB814`
 - Negative: `#F97B76`
 
 ## Typography
 
-**Font:** только `Suisse Intl` (без фолбэков)
+**Font:** только `"Suisse Intl"` (без фолбэков)
 
 ### Desktop
 - display-xl: 56px / 68px / 500 / -1% (hero)
@@ -34,7 +35,7 @@
 - display-md: 30px / 38px / 500 / -1.5% (средние секции)
 - display-sm: 24px / 32px / 500 / -0.5% (карточки)
 - body-lg: 18px / 28px / 400 / -1% (лид)
-- body-md: 16px / 24px / 400 / -1% (основной текст)
+- body-md: 16px / 24px / 400 / -1% (основной текст, навигация)
 - body-sm: 14px / 20px / 400 / 0 (второстепенный)
 - body-xs: 12px / 14px / 400 / 0 (подписи)
 - button-md: 16px / 24px / 500 / 0
@@ -62,9 +63,10 @@
 ## Rounded
 
 - sm: 4px (чекбоксы)
-- md: 8px (кнопки, инпуты)
-- lg: 12px (карточки)
-- xl: 16px (крупные карточки)
+- md: 8px
+- lg: 12px (кнопки, инпуты, поиск) ← реальное значение из Figma
+- xl: 16px (nav-панель header, крупные карточки)
+- 2xl: 20px
 - 3xl: 24px (hero-блоки)
 
 ## Grid
@@ -89,14 +91,25 @@
 - Background: `#12951A` (hover `#19AA1E`, pressed `#00830C`)
 - Text: `#FFFFFF`
 - Typography: button-md (16px / 24px / 500)
-- Rounded: 8px
-- Padding: 12px 24px
+- Rounded: 12px
+- Padding: 12px 16px (фикс. ширина 190px в header) или 12px 28px
 
 ### button-secondary
-- Background: transparent
-- Border: 1px `#FFFFFF5C`
+- Background: `rgba(255,255,255,0.12)`
+- Border: none
 - Text: `#FFFFFF`
-- На брендовых секциях: background `#DBDBDB`, text `#1A1A1A`
+- Rounded: 12px
+- Padding: 12px 28px
+
+### search-input
+- Background: `rgba(255,255,255,0.12)`
+- Border: none
+- Rounded: 12px
+- Padding: 12px 16px
+- Width: 200px
+- Height: 48px
+- Icon: 24px, color ink-secondary
+- Placeholder: body-md, ink-secondary
 
 ### link
 - Color: `#3BB643`
@@ -105,17 +118,25 @@
 
 ### card
 - Background: `#283136`
-- Border: 1px `#FFFFFF5C`
+- Border: 1px `rgba(255,255,255,0.36)`
 - Rounded: 12px
 - Padding: 24px
 - Text: `#FFFFFF`
 
 ### text-input
 - Background: `#283136`
-- Border: 1px `#FFFFFF5C`
-- Rounded: 8px
+- Border: 1px `rgba(255,255,255,0.36)`
+- Rounded: 12px
 - Padding: 12px 16px
 - Focus border: `#3BB643`
+
+### header-nav
+- Background: `#283136`
+- Rounded: 16px
+- Height: 80px
+- Padding: 0 28px
+- Links: body-md (16px), ink-secondary, gap 32px
+- Hover: ink (#FFFFFF)
 
 ### hero-band
 - Background: `#192025`
@@ -128,6 +149,23 @@
 - Typography: display-md
 - Padding: 96px 24px
 
+## Header (канонический — из Figma)
+
+### Структура
+Две строки в контейнере 1168px:
+1. **header-top** (56px) — логотип 56x56, поиск 200px, язык, кнопки "Контакты" и "Оставить заявку"
+2. **header-nav** (80px) — "Все продукты ▾" + ссылки, фон #283136, radius 16px
+
+### Ключевые значения
+- Контейнер: 1168px
+- Логотип: 56x56px, SVG из `assets/logo/2gis-logo.svg`
+- Поиск: 200x48px, radius 12px, фон rgba(255,255,255,0.12)
+- Кнопки: height 48px, radius 12px
+- "Оставить заявку": фикс. ширина 190px
+- Gap между элементами header-top: 32px
+- Gap между ссылками nav: 32px
+- Файлы: `patterns/header/header.html` + `header.css` (копировать как есть)
+
 ## Rules
 
 ### Do
@@ -136,15 +174,18 @@
 - Элевация через контраст поверхностей (canvas → card → raised), без теней
 - Текст: только белая иерархия с alpha (100% / 64% / 36%)
 - Font-family: только `"Suisse Intl"`
+- Скругления кнопок и инпутов: 12px (реальное значение из Figma)
+- Скругление nav-панели: 16px
 
 ### Don't
 - Не делать primary-кнопки серыми/белыми/светло-зелёными
 - Не использовать `#12951A` для текста на тёмном (нечитаемо)
 - Не использовать зелёный как фон обычных поверхностей
 - Не вводить hex вне палитры
-- Не использовать pill-скругления (кнопки 8px, карточки 12px)
+- Не использовать pill-скругления (9999px)
 - Не писать font-stack с фолбэками
+- Не переделывать header — копировать из `patterns/header/`
 
 ## Example Prompt
 
-«Собери hero: фон #192025, заголовок Suisse Intl 56/68 weight 500 tracking -1% белый, подзаголовок 18/28 #FFFFFFA3, кнопка #12951A radius 8px padding 12/24 белый текст 16/24 weight 500, ссылка #3BB643».
+«Собери hero: фон #192025, заголовок Suisse Intl 56/68 weight 500 tracking -1% белый, подзаголовок 16/24 #FFFFFFA3, кнопка #12951A radius 12px padding 12/16 белый текст 16/24 weight 500, ссылка #3BB643».
