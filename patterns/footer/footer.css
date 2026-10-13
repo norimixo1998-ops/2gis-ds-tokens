@@ -55,8 +55,9 @@
   margin: 0 0 20px 0;
 }
 
-.footer-subheading + .footer-links {
-  margin-top: 8px;
+/* Отступ между подзаголовками в одной колонке */
+.footer-subcolumn + .footer-subcolumn {
+  margin-top: 36px;
 }
 
 /* Подколонки */
@@ -68,10 +69,6 @@
 .footer-subcolumn {
   flex: 1;
   min-width: 0;
-}
-
-.footer-subcolumn + .footer-subcolumn {
-  margin-top: 36px;
 }
 
 /* Списки ссылок */
@@ -93,6 +90,7 @@
   text-decoration: none;
   font: 400 14px/20px "Suisse Intl";
   color: rgba(255, 255, 255, 0.36);
+  white-space: nowrap; /* запрет переноса */
   transition: color 0.2s;
 }
 
@@ -119,6 +117,7 @@
   font: 500 16px/24px "Suisse Intl";
   color: rgba(255, 255, 255, 0.64);
   margin-top: 20px;
+  white-space: nowrap;
   transition: color 0.2s;
 }
 
@@ -202,6 +201,7 @@
   text-decoration: none;
   font: 500 12px/14px "Suisse Intl";
   color: rgba(255, 255, 255, 0.36);
+  white-space: nowrap;
   transition: color 0.2s;
 }
 
