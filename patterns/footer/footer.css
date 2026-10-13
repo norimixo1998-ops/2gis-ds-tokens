@@ -84,7 +84,7 @@
   padding: 0;
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 10px; /* было 8px, стало 10px */
 }
 
 .footer-links li {
@@ -101,7 +101,7 @@
 }
 
 .footer-links a:hover {
-  color: #FFFFFF;
+  color: #22AA27; /* было #FFFFFF, стало зелёный */
 }
 
 /* Внешние ссылки со стрелкой */
@@ -118,7 +118,7 @@
 }
 
 .footer-link-external:hover {
-  color: #FFFFFF;
+  color: #22AA27;
 }
 
 .footer-link-external .icon-external {
@@ -149,7 +149,7 @@
 }
 
 .footer-telegram-link:hover {
-  color: #FFFFFF;
+  color: #22AA27;
 }
 
 .footer-telegram-link .icon-telegram {
@@ -203,7 +203,7 @@
 }
 
 .footer-contact-item:hover {
-  color: rgba(255, 255, 255, 0.64);
+  color: #22AA27;
 }
 
 .footer-contact-icon {
