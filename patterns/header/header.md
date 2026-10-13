@@ -6,7 +6,7 @@
 ## Файлы реализации
 - HTML: `patterns/header/header.html`
 - CSS: `patterns/header/header.css`
-- Логотип: `assets/logo/2gis-logo.svg`
+- Логотип: `assets/logo/logo-dark.svg`
 
 ## Структура
 Две строки:
