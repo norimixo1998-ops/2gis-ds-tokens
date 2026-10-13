@@ -15,7 +15,7 @@
   padding: 64px 0 48px;
 }
 
-/* Логотип */
+/* Логотип — тот же SVG, что в хедере, отображается 48px высотой */
 .footer-logo {
   display: block;
   margin-bottom: 32px;
@@ -42,6 +42,12 @@
   flex: 2;
 }
 
+/* Внутренний контейнер колонки (для отступов между группами) */
+.footer-column-inner {
+  display: flex;
+  flex-direction: column;
+}
+
 /* Заголовки */
 .footer-heading {
   font: 500 16px/24px "Suisse Intl";
@@ -55,12 +61,12 @@
   margin: 0 0 20px 0;
 }
 
-/* Отступ между подзаголовками в одной колонке */
-.footer-subcolumn + .footer-subcolumn {
+/* Отступ 36px перед подзаголовком, который идёт после списка */
+.footer-subheading--spaced {
   margin-top: 36px;
 }
 
-/* Подколонки */
+/* Подколонки (для широкой колонки) */
 .footer-subcolumns {
   display: flex;
   gap: 36px;
@@ -90,7 +96,7 @@
   text-decoration: none;
   font: 400 14px/20px "Suisse Intl";
   color: rgba(255, 255, 255, 0.36);
-  white-space: nowrap; /* запрет переноса */
+  white-space: nowrap;
   transition: color 0.2s;
 }
 
@@ -136,9 +142,9 @@
   margin-top: 20px;
 }
 
-/* Telegram блок */
+/* Telegram блок — 96px отступа от предыдущего контента в колонке */
 .footer-telegram {
-  margin-top: 36px;
+  margin-top: 96px;
 }
 
 .footer-telegram-link {
