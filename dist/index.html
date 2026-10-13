@@ -165,9 +165,219 @@
           margin: 0 auto;
         }
       }
-    </style>
+
+    /* ===== patterns/header/header.css (verbatim) ===== */
+/* === Хедер === */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.site-header {
+  background: transparent;
+  font-family: "Suisse Intl", sans-serif;
+  margin-top: 28px;
+}
+
+/* Общий контейнер для выравнивания */
+.header-container {
+  max-width: 1168px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+/* Верхняя строка: 56px */
+.header-top {
+  display: flex;
+  align-items: center;
+  height: 56px;
+}
+
+/* Логотип */
+.logo {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  text-decoration: none;
+}
+.logo img {
+  height: 42px;
+  width: auto;
+  display: block;
+}
+
+/* Правая часть */
+.header-right {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  gap: 32px;
+}
+
+/* Подгруппы */
+.header-group {
+  display: flex;
+  align-items: center;
+}
+.header-group--search {
+  gap: 8px;
+}
+.header-group--cta {
+  gap: 12px;
+}
+
+/* Поиск */
+.header-search {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 12px 16px;
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 12px;
+  color: rgba(255, 255, 255, 0.64);
+}
+.header-search input {
+  border: 0;
+  background: transparent;
+  outline: 0;
+  color: #ffffff;
+  font: 400 14px/20px "Suisse Intl";
+  width: 156px;
+}
+.header-search input::placeholder {
+  color: rgba(255, 255, 255, 0.64);
+}
+
+/* Язык */
+.lang-selector {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 8px;
+  border: 0;
+  background: transparent;
+  color: #ffffff;
+  font: 400 16px/24px "Suisse Intl";
+  cursor: pointer;
+}
+
+/* Кнопки */
+.button-secondary,
+.button-primary {
+  height: 48px;
+  border: 0;
+  border-radius: 12px;
+  cursor: pointer;
+  font: 500 16px/24px "Suisse Intl";
+  padding: 0 24px;
+  white-space: nowrap;
+  min-width: 160px;
+}
+.button-secondary {
+  background: rgba(255, 255, 255, 0.12);
+  color: #ffffff;
+}
+.button-primary {
+  background: #12951A;
+  color: #ffffff;
+  min-width: 190px;
+}
+
+/* Навигация: 80px */
+.header-nav {
+  display: flex;
+  align-items: center;
+  height: 80px;
+  margin-top: 24px;
+  padding: 0 28px;
+  background: #283136;
+  border-radius: 16px;
+  gap: 32px;
+}
+
+/* Дропдаун */
+.nav-dropdown {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border: 0;
+  background: transparent;
+  color: #ffffff;
+  font: 500 16px/24px "Suisse Intl";
+  cursor: pointer;
+}
+
+/* Ссылки */
+.header-nav a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.64);
+  font: 500 16px/24px "Suisse Intl";
+  white-space: nowrap;
+}
+.header-nav a:hover {
+  color: #ffffff;
+}
+  </style>
   </head>
   <body>
+    <header class="site-header">
+  <div class="header-container">
+    <!-- Верхняя строка -->
+    <div class="header-top">
+      <a href="/" class="logo" aria-label="2ГИС — на главную">
+        <img src="assets/logo/logo-dark.svg" alt="2ГИС" width="123" height="42" />
+      </a>
+
+      <div class="header-right">
+        <!-- Поиск + язык -->
+        <div class="header-group header-group--search">
+          <div class="header-search">
+            <svg class="search-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <circle cx="10.5" cy="10.5" r="7" stroke="currentColor" stroke-width="2"/>
+              <line x1="16" y1="16" x2="22" y2="22" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+            <input type="search" placeholder="Поиск" aria-label="Поиск по сайту" />
+          </div>
+
+          <button class="lang-selector" aria-label="Выбрать язык">
+            <svg class="globe-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="2"/>
+              <ellipse cx="12" cy="12" rx="4" ry="9" stroke="currentColor" stroke-width="2"/>
+              <line x1="3" y1="12" x2="21" y2="12" stroke="currentColor" stroke-width="2"/>
+            </svg>
+            <span>RU</span>
+            <svg class="chevron" width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </button>
+        </div>
+
+        <!-- Кнопки -->
+        <div class="header-group header-group--cta">
+          <button class="button-secondary" type="button">Контакты</button>
+          <button class="button-primary" type="button">Оставить заявку</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Навигация -->
+    <nav class="header-nav" aria-label="Основная навигация">
+      <button class="nav-dropdown">
+        <span>Все продукты</span>
+        <svg class="chevron" width="24" height="24" viewBox="0 0 24 24" fill="none">
+          <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+      </button>
+      <a href="#">Бизнесу</a>
+      <a href="#">Госсектору</a>
+      <a href="#">Партнёрам</a>
+      <a href="#">Документация</a>
+      <a href="#">О данных</a>
+      <a href="#">Кейсы</a>
+      <a href="#">Контакты</a>
+    </nav>
+  </div>
+</header>
     <main>
       <section class="hero hero-split" aria-labelledby="hero-title">
         <div class="container">

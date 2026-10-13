@@ -31,8 +31,8 @@ body {
   flex-shrink: 0;
   text-decoration: none;
 }
-.logo img {
-  height: 42px;
+.logo svg {
+  height: 56px;
   width: auto;
   display: block;
 }
