@@ -7,7 +7,7 @@ body {
 .site-header {
   background: transparent;
   font-family: "Suisse Intl", sans-serif;
-  margin-top: 28px; /* отступ сверху от края браузера */
+  margin-top: 28px;
 }
 
 /* Общий контейнер для выравнивания */
@@ -31,17 +31,18 @@ body {
   flex-shrink: 0;
   text-decoration: none;
 }
-.logo svg {
+.logo img {
   height: 42px;
   width: auto;
+  display: block;
 }
 
-/* Правая часть: поиск+язык и кнопки */
+/* Правая часть */
 .header-right {
   display: flex;
   align-items: center;
-  margin-left: auto; /* прижимает к правому краю */
-  gap: 32px; /* зазор между подгруппами */
+  margin-left: auto;
+  gap: 32px;
 }
 
 /* Подгруппы */
@@ -50,10 +51,10 @@ body {
   align-items: center;
 }
 .header-group--search {
-  gap: 8px; /* между поиском и языком */
+  gap: 8px;
 }
 .header-group--cta {
-  gap: 12px; /* между кнопками */
+  gap: 12px;
 }
 
 /* Поиск */
@@ -100,8 +101,8 @@ body {
   cursor: pointer;
   font: 500 16px/24px "Suisse Intl";
   padding: 0 24px;
-  white-space: nowrap; /* запрет переноса текста */
-  min-width: 160px; /* минимальная ширина */
+  white-space: nowrap;
+  min-width: 160px;
 }
 .button-secondary {
   background: rgba(255, 255, 255, 0.12);
@@ -113,7 +114,7 @@ body {
   min-width: 190px;
 }
 
-/* Навигационная панель: 80px */
+/* Навигация: 80px */
 .header-nav {
   display: flex;
   align-items: center;
@@ -125,7 +126,7 @@ body {
   gap: 32px;
 }
 
-/* Дропдаун "Все продукты" */
+/* Дропдаун */
 .nav-dropdown {
   display: flex;
   align-items: center;
@@ -137,7 +138,7 @@ body {
   cursor: pointer;
 }
 
-/* Ссылки навигации */
+/* Ссылки */
 .header-nav a {
   text-decoration: none;
   color: rgba(255, 255, 255, 0.64);
@@ -146,9 +147,4 @@ body {
 }
 .header-nav a:hover {
   color: #ffffff;
-}
-
-/* Разделитель между левой и правой группами навигации */
-.nav-spacer {
-  margin-left: auto;
 }
