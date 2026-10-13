@@ -4,13 +4,13 @@
 
 ---
 
-##  Для AI (Codex, Open Design)
+##  Для AI (qwen)
 
-**Точка входа:** `.codex/AGENT.md` — начни чтение отсюда.
+**Точка входа:** `.qwen/AGENT.md` — начни чтение отсюда.
 
 **Порядок чтения:**
-1. `.codex/AGENT.md` — инструкции по сборке
-2. `.codex/context/design-rules.md` — все цвета, шрифты, отступы, правила
+1. `.qwen/AGENT.md` — инструкции по сборке
+2. `.qwen/context/design-rules.md` — все цвета, шрифты, отступы, правила
 3. `blocks/` — готовые компоненты (hero, features, pricing, cta, footer)
 4. `patterns/` — канонические паттерны (header, footer)
 5. `templates/` — шаблоны лендингов (будут добавлены)
@@ -21,7 +21,7 @@
 - `scripts/` — скрипты сборки
 
 **Правила:**
-- Все цвета брать только из `.codex/context/design-rules.md`
+- Все цвета брать только из `.qwen/context/design-rules.md`
 - Все блоки брать из папки `blocks/`
 - Header всегда копировать из `patterns/header.md`
 - Результат сборки сохранять в `dist/`
