@@ -158,7 +158,7 @@
 
 ### Ключевые значения
 - Контейнер: 1168px
-- Логотип: 56x56px, SVG из `assets/logo/2gis-logo.svg`
+- Логотип: 56x56px, SVG из `assets/logo/logo-dark.svg`
 - Поиск: 200x48px, radius 12px, фон rgba(255,255,255,0.12)
 - Кнопки: height 48px, radius 12px
 - "Оставить заявку": фикс. ширина 190px
