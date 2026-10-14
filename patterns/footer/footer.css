@@ -277,6 +277,7 @@
     transform: rotate(180deg);
   }
 
+  /* Скрываем контент по умолчанию */
   .footer-column-inner,
   .footer-subcolumns {
     display: none;
@@ -288,12 +289,14 @@
     display: flex;
   }
 
-  /* Показываем внешние ссылки всегда на мобильном */
-  .footer-external-links-mobile {
-    display: flex;
+  /* На мобильном подколонки становятся вертикальным стеком */
+  .footer-subcolumns {
     flex-direction: column;
-    gap: 12px;
-    padding: 0 0 14px 0;
+    gap: 0;
+  }
+
+  .footer-subcolumn {
+    width: 100%;
   }
 
   .footer-subheading {
@@ -317,20 +320,27 @@
     color: rgba(255, 255, 255, 0.36);
   }
 
+  /* Внешние ссылки на мобильном — в одну колонку, со стрелками */
   .footer-link-external {
-    font: 500 14px/20px "Suisse Intl";
-    color: rgba(255, 255, 255, 0.64);
     display: inline-flex;
     align-items: center;
     gap: 5px;
+    font: 500 14px/20px "Suisse Intl";
+    color: rgba(255, 255, 255, 0.64);
     text-decoration: none;
+    margin-top: 0;
   }
 
   .footer-link-external svg {
     display: inline-block;
   }
 
+  .footer-link-external--cases {
+    margin-top: 20px;
+  }
+
   .footer-external-group {
+    display: flex;
     flex-direction: column;
     gap: 12px;
     margin-top: 12px;
@@ -366,7 +376,6 @@
     gap: 24px;
   }
 
-  /* На мобильном: сначала контакты, потом копирайт */
   .footer-contacts {
     order: 1;
     align-items: flex-start;
