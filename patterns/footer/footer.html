@@ -38,12 +38,6 @@
                 <li><a href="#">2ГИС ГеоПоток: Логистика</a></li>
                 <li><a href="#">On-premise</a></li>
               </ul>
-              <a href="#" class="footer-link-external">
-                <span>Кейсы</span>
-                <svg class="icon-external" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                  <path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-              </a>
             </div>
             <div class="footer-subcolumn">
               <h4 class="footer-subheading">Отраслевые решения</h4>
@@ -57,21 +51,28 @@
                 <li><a href="#">Получить демодоступ</a></li>
                 <li><a href="#">Редактор стилей карты</a></li>
               </ul>
-              <div class="footer-external-group">
-                <a href="#" class="footer-link-external">
-                  <span>Документация</span>
-                  <svg class="icon-external" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                    <path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                  </svg>
-                </a>
-                <a href="#" class="footer-link-external">
-                  <span>О качестве данных</span>
-                  <svg class="icon-external" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                    <path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                  </svg>
-                </a>
-              </div>
             </div>
+          </div>
+          <!-- Вынесены на уровень колонки для отображения на мобильном -->
+          <div class="footer-external-links-mobile">
+            <a href="#" class="footer-link-external">
+              <span>Документация</span>
+              <svg class="icon-external" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+            <a href="#" class="footer-link-external">
+              <span>О качестве данных</span>
+              <svg class="icon-external" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+            <a href="#" class="footer-link-external">
+              <span>Кейсы</span>
+              <svg class="icon-external" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
           </div>
         </div>
 
@@ -139,9 +140,12 @@
     </div>
   </div>
 
-  <!-- Нижняя часть: контакты и копирайт (поменяны местами) -->
+  <!-- Нижняя часть: копирайт слева, контакты справа (как было изначально) -->
   <div class="footer-bottom">
     <div class="footer-container">
+      <div class="footer-copyright">
+        1999–2026 © 2ГИС. Все права защищены.
+      </div>
       <div class="footer-contacts">
         <div class="footer-contacts-heading">Если появятся вопросы</div>
         <div class="footer-contacts-row">
@@ -165,9 +169,6 @@
           </a>
         </div>
       </div>
-      <div class="footer-copyright">
-        1999–2026 © 2ГИС. Все права защищены.
-      </div>
     </div>
   </div>
 </footer>
@@ -180,7 +181,7 @@
       this.setAttribute('aria-expanded', !isExpanded);
       
       const content = this.nextElementSibling;
-      if (content && content.classList.contains('footer-column-inner')) {
+      if (content && (content.classList.contains('footer-column-inner') || content.classList.contains('footer-subcolumns'))) {
         content.classList.toggle('is-open');
       }
     });

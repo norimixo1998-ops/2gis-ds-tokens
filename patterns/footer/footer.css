@@ -214,7 +214,6 @@
 
 /* === Мобильная версия футера (до 768px) === */
 @media (max-width: 768px) {
-  /* Убираем лишние отступы у body */
   body {
     margin: 0;
     padding: 0;
@@ -228,7 +227,6 @@
     padding: 0 16px;
   }
 
-  /* Логотип меньше */
   .footer-logo {
     margin-bottom: 24px;
   }
@@ -238,7 +236,6 @@
     width: auto;
   }
 
-  /* Колонки → вертикальный стек */
   .footer-columns {
     flex-direction: column;
     gap: 0;
@@ -253,7 +250,6 @@
     flex: none;
   }
 
-  /* Заголовки секций */
   .footer-heading {
     font: 500 16px/20px "Suisse Intl";
     color: #FFFFFF;
@@ -266,7 +262,6 @@
     width: 100%;
   }
 
-  /* Стрелка аккордеона */
   .footer-heading::after {
     content: "";
     width: 24px;
@@ -282,7 +277,6 @@
     transform: rotate(180deg);
   }
 
-  /* Скрываем контент по умолчанию (все вкладки закрыты) */
   .footer-column-inner,
   .footer-subcolumns {
     display: none;
@@ -294,7 +288,14 @@
     display: flex;
   }
 
-  /* Подзаголовки */
+  /* Показываем внешние ссылки всегда на мобильном */
+  .footer-external-links-mobile {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 0 0 14px 0;
+  }
+
   .footer-subheading {
     font: 500 14px/20px "Suisse Intl";
     color: rgba(255, 255, 255, 0.64);
@@ -305,7 +306,6 @@
     margin-top: 20px;
   }
 
-  /* Ссылки */
   .footer-links {
     gap: 12px;
     margin-bottom: 20px;
@@ -317,9 +317,17 @@
     color: rgba(255, 255, 255, 0.36);
   }
 
-  /* Внешние ссылки без стрелок на мобильном */
+  .footer-link-external {
+    font: 500 14px/20px "Suisse Intl";
+    color: rgba(255, 255, 255, 0.64);
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    text-decoration: none;
+  }
+
   .footer-link-external svg {
-    display: none;
+    display: inline-block;
   }
 
   .footer-external-group {
@@ -328,7 +336,6 @@
     margin-top: 12px;
   }
 
-  /* Telegram блок */
   .footer-telegram {
     margin-top: 24px;
     padding: 0;
@@ -348,7 +355,6 @@
     height: 24px;
   }
 
-  /* Нижняя часть */
   .footer-bottom {
     margin-top: 24px;
     padding: 24px 16px;
@@ -360,7 +366,7 @@
     gap: 24px;
   }
 
-  /* Поменяли местами: сначала контакты, потом копирайт */
+  /* На мобильном: сначала контакты, потом копирайт */
   .footer-contacts {
     order: 1;
     align-items: flex-start;
@@ -391,7 +397,6 @@
   }
 }
 
-/* === Очень маленькие экраны (до 375px) === */
 @media (max-width: 375px) {
   .footer-container {
     padding: 0 12px;
