@@ -15,7 +15,7 @@
   padding: 64px 0 48px;
 }
 
-/* Логотип — тот же SVG, что в хедере, отображается 48px высотой */
+/* Логотип */
 .footer-logo {
   display: block;
   margin-bottom: 32px;
@@ -42,7 +42,7 @@
   flex: 2;
 }
 
-/* Внутренний контейнер колонки (для отступов между группами) */
+/* Внутренний контейнер колонки */
 .footer-column-inner {
   display: flex;
   flex-direction: column;
@@ -66,7 +66,7 @@
   margin-top: 36px;
 }
 
-/* Подколонки (для широкой колонки) */
+/* Подколонки */
 .footer-subcolumns {
   display: flex;
   gap: 36px;
@@ -84,7 +84,7 @@
   padding: 0;
   display: flex;
   flex-direction: column;
-  gap: 10px; /* было 8px, стало 10px */
+  gap: 10px;
 }
 
 .footer-links li {
@@ -101,7 +101,7 @@
 }
 
 .footer-links a:hover {
-  color: #22AA27; /* было #FFFFFF, стало зелёный */
+  color: #22AA27;
 }
 
 /* Внешние ссылки со стрелкой */
@@ -125,6 +125,11 @@
   color: rgba(255, 255, 255, 0.64);
 }
 
+/* На десктопе "Кейсы" идёт сразу после списка Продукты */
+.footer-link-cases {
+  margin-top: 20px;
+}
+
 .footer-external-group {
   display: flex;
   flex-direction: column;
@@ -132,7 +137,7 @@
   margin-top: 20px;
 }
 
-/* Telegram блок — 96px отступа от предыдущего контента в колонке */
+/* Telegram блок */
 .footer-telegram {
   margin-top: 96px;
 }
@@ -277,7 +282,7 @@
     transform: rotate(180deg);
   }
 
-  /* Скрываем контент по умолчанию */
+  /* Скрываем контент по умолчанию (аккордеон) */
   .footer-column-inner,
   .footer-subcolumns {
     display: none;
@@ -299,6 +304,11 @@
     width: 100%;
   }
 
+  /* Отступ 20px между блоками Продукты / Отраслевые решения / Разработчикам */
+  .footer-subcolumn + .footer-subcolumn {
+    margin-top: 20px;
+  }
+
   .footer-subheading {
     font: 500 14px/20px "Suisse Intl";
     color: rgba(255, 255, 255, 0.64);
@@ -311,8 +321,7 @@
 
   .footer-links {
     gap: 12px;
-    margin-bottom: 20px;
-    padding: 0;
+    margin-bottom: 0;
   }
 
   .footer-links a {
@@ -320,14 +329,13 @@
     color: rgba(255, 255, 255, 0.36);
   }
 
-  /* Внешние ссылки на мобильном — в одну колонку, со стрелками */
+  /* Внешние ссылки на мобильном — со стрелками */
   .footer-link-external {
     display: inline-flex;
     align-items: center;
     gap: 5px;
     font: 500 14px/20px "Suisse Intl";
     color: rgba(255, 255, 255, 0.64);
-    text-decoration: none;
     margin-top: 0;
   }
 
@@ -335,15 +343,25 @@
     display: inline-block;
   }
 
-  .footer-link-external--cases {
-    margin-top: 20px;
-  }
-
   .footer-external-group {
-    display: flex;
     flex-direction: column;
     gap: 12px;
     margin-top: 12px;
+  }
+
+  /* "Кейсы" на мобильном — в самом конце секции, после "О качестве данных" */
+  .footer-link-cases {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    font: 500 14px/20px "Suisse Intl";
+    color: rgba(255, 255, 255, 0.64);
+    text-decoration: none;
+    margin-top: 20px;
+  }
+
+  .footer-link-cases svg {
+    display: inline-block;
   }
 
   .footer-telegram {
@@ -376,6 +394,7 @@
     gap: 24px;
   }
 
+  /* На мобильном: сначала контакты, потом копирайт */
   .footer-contacts {
     order: 1;
     align-items: flex-start;
@@ -406,6 +425,7 @@
   }
 }
 
+/* === Очень маленькие экраны (до 375px) === */
 @media (max-width: 375px) {
   .footer-container {
     padding: 0 12px;
