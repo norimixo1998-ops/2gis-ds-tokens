@@ -215,13 +215,14 @@
 
 /* === Мобильная версия футера (до 768px) === */
 @media (max-width: 768px) {
+  /* Прижимаем футер к низу, страница растягивается по контенту */
   html, body {
     margin: 0;
     padding: 0;
-    min-height: 100vh;
   }
 
   body {
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
   }
