@@ -125,11 +125,7 @@
   color: rgba(255, 255, 255, 0.64);
 }
 
-/* На десктопе "Кейсы" идёт сразу после списка Продукты */
-.footer-link-cases {
-  margin-top: 20px;
-}
-
+/* Группа внешних ссылок (Документация + О качестве) */
 .footer-external-group {
   display: flex;
   flex-direction: column;
@@ -349,19 +345,14 @@
     margin-top: 12px;
   }
 
-  /* "Кейсы" на мобильном — в самом конце секции, после "О качестве данных" */
-  .footer-link-cases {
-    display: inline-flex;
-    align-items: center;
-    gap: 5px;
-    font: 500 14px/20px "Suisse Intl";
-    color: rgba(255, 255, 255, 0.64);
-    text-decoration: none;
-    margin-top: 20px;
+  /* "Кейсы" на десктопе — видна, на мобильном — скрыта */
+  .footer-cases-desktop {
+    display: none !important;
   }
 
-  .footer-link-cases svg {
-    display: inline-block;
+  /* "Кейсы" на мобильном — видна внутри группы внешних ссылок */
+  .footer-cases-mobile {
+    display: inline-flex !important;
   }
 
   .footer-telegram {
@@ -422,6 +413,13 @@
   .footer-contact-item {
     font: 500 12px/16px "Suisse Intl";
     color: rgba(255, 255, 255, 0.36);
+  }
+}
+
+/* На десктопе скрываем мобильную версию "Кейсы" */
+@media (min-width: 769px) {
+  .footer-cases-mobile {
+    display: none !important;
   }
 }
 
