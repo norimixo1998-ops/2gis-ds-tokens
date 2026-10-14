@@ -215,9 +215,19 @@
 
 /* === Мобильная версия футера (до 768px) === */
 @media (max-width: 768px) {
-  body {
+  html, body {
     margin: 0;
     padding: 0;
+    min-height: 100vh;
+  }
+
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .site-footer {
+    margin-top: auto;
   }
 
   .footer-main {
@@ -251,11 +261,16 @@
     flex: none;
   }
 
+  /* Расстояние между аккордеонами 12px */
+  .footer-column + .footer-column {
+    margin-top: 12px;
+  }
+
   .footer-heading {
     font: 500 16px/20px "Suisse Intl";
     color: #FFFFFF;
     margin: 0;
-    padding: 14px 0;
+    padding: 6px 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
