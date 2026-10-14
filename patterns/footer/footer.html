@@ -1,7 +1,7 @@
 <footer class="site-footer">
   <div class="footer-main">
     <div class="footer-container">
-      <!-- Логотип (тот же inline SVG, что в хедере) -->
+      <!-- Логотип -->
       <a href="/" class="footer-logo" aria-label="2ГИС — на главную">
         <svg width="166" height="56" viewBox="0 0 166 56" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="2ГИС">
           <path fill-rule="evenodd" clip-rule="evenodd" d="M16.9083 0.00390625C16.3569 0.00798653 15.6653 0.0151171 14.7253 0.0265705C13.2249 0.0662346 12.0867 0.156969 10.9713 0.35514C9.61211 0.596171 8.38159 0.992938 7.20515 1.58553C6.00954 2.1864 4.91462 2.9726 3.96474 3.91267C3.01587 4.84966 2.21959 5.93316 1.60888 7.1187C1.0086 8.28435 0.60662 9.50374 0.360531 10.854C0.159628 11.9591 0.0684527 13.0824 0.0285621 14.5507L0.0148629 15.1624C0.011233 15.3724 0.00849479 15.5898 0.00651404 15.8185L0 17.1473L5.30698e-05 38.8796L0.00408685 39.8272C0.0072382 40.4307 0.014697 40.95 0.0285934 41.4488C0.0684834 42.916 0.159684 44.0396 0.360439 45.143C0.60671 46.4943 1.00876 47.7144 1.60878 48.8795C2.21971 50.0644 3.01569 51.1475 3.96539 52.0864C4.9162 53.0263 6.01117 53.8128 7.2065 54.4136C8.38159 55.0055 9.61211 55.4022 10.9718 55.6434C11.9854 55.8234 13.0182 55.9148 14.3071 55.9594L15.273 55.9829C15.7753 55.99 16.5176 55.9939 17.9996 55.9985L39.0159 55.9952C39.573 55.9914 40.2463 55.9844 41.2746 55.9718C42.7749 55.9322 43.9131 55.8414 45.0286 55.6433C46.3878 55.4022 47.6183 55.0055 48.7947 54.4129C49.9891 53.8121 51.0846 53.0254 52.0345 52.0864C52.9848 51.1469 53.7809 50.0634 54.3903 48.8792C54.9911 47.7146 55.3934 46.4936 55.6387 45.1423C55.8213 44.1385 55.9139 43.1149 55.9591 41.8385L55.9713 41.4477C55.9796 41.1491 55.9856 40.8427 55.9898 40.5153L55.9995 37.9395L55.9979 16.6359L55.9898 15.4831C55.9856 15.1557 55.9796 14.849 55.9713 14.5496C55.9316 13.0883 55.8396 11.9606 55.6386 10.8547C55.3935 9.50438 54.9913 8.28413 54.3897 7.11787C53.781 5.93422 52.9846 4.85028 52.0338 3.91138C51.0862 2.97352 49.9907 2.18713 48.7939 1.58511C47.6183 0.992938 46.3878 0.596171 45.0281 0.35505C44.0145 0.174976 42.9817 0.0836189 41.6928 0.0390405L40.5835 0.0136369C40.4952 0.0125942 40.3996 0.0116231 40.2946 0.0107078L16.9083 0.00390625Z" fill="#1A1A1A" fill-opacity="0.01"/>
@@ -22,9 +22,9 @@
 
       <!-- Колонки навигации -->
       <div class="footer-columns">
-        <!-- Колонка 1: Данные и технологии 2ГИС (широкая) -->
+        <!-- Колонка 1: Данные и технологии 2ГИС -->
         <div class="footer-column footer-column--wide">
-          <h3 class="footer-heading">Данные и технологии 2ГИС</h3>
+          <h3 class="footer-heading" role="button" aria-expanded="false" tabindex="0">Данные и технологии 2ГИС</h3>
           <div class="footer-subcolumns">
             <div class="footer-subcolumn">
               <h4 class="footer-subheading">Продукты</h4>
@@ -77,7 +77,7 @@
 
         <!-- Колонка 2: Другие продукты -->
         <div class="footer-column">
-          <h3 class="footer-heading">Другие продукты</h3>
+          <h3 class="footer-heading" role="button" aria-expanded="false" tabindex="0">Другие продукты</h3>
           <div class="footer-column-inner">
             <h4 class="footer-subheading">Для бизнеса</h4>
             <ul class="footer-links">
@@ -94,7 +94,7 @@
 
         <!-- Колонка 3: Компания -->
         <div class="footer-column">
-          <h3 class="footer-heading">Компания</h3>
+          <h3 class="footer-heading" role="button" aria-expanded="false" tabindex="0">Компания</h3>
           <ul class="footer-links">
             <li><a href="#">Техно 2ГИС</a></li>
             <li><a href="#">Работа в 2ГИС</a></li>
@@ -111,7 +111,7 @@
 
         <!-- Колонка 4: Условия + Подписывайтесь -->
         <div class="footer-column">
-          <h3 class="footer-heading">Условия использования</h3>
+          <h3 class="footer-heading" role="button" aria-expanded="false" tabindex="0">Условия использования</h3>
           <ul class="footer-links">
             <li><a href="#">Правовая информация</a></li>
             <li><a href="#">Политика конфиденциальности</a></li>
@@ -167,3 +167,20 @@
     </div>
   </div>
 </footer>
+
+<!-- JavaScript для аккордеона -->
+<script>
+  // Простой скрипт для аккордеона на мобильном
+  document.querySelectorAll('.footer-heading').forEach(header => {
+    header.addEventListener('click', function() {
+      const isExpanded = this.getAttribute('aria-expanded') === 'true';
+      this.setAttribute('aria-expanded', !isExpanded);
+      
+      // Находим следующий элемент (контент)
+      const content = this.nextElementSibling;
+      if (content) {
+        content.classList.toggle('is-open');
+      }
+    });
+  });
+</script>
