@@ -95,28 +95,32 @@
         <!-- Колонка 3: Компания -->
         <div class="footer-column">
           <h3 class="footer-heading" role="button" aria-expanded="false" tabindex="0">Компания</h3>
-          <ul class="footer-links">
-            <li><a href="#">Техно 2ГИС</a></li>
-            <li><a href="#">Работа в 2ГИС</a></li>
-            <li><a href="#">Купить франшизу</a></li>
-            <li><a href="#">Стать партнёром</a></li>
-            <li><a href="#">Контакты</a></li>
-          </ul>
-          <h4 class="footer-subheading footer-subheading--spaced">Что нового</h4>
-          <ul class="footer-links">
-            <li><a href="#">Пресс-центр</a></li>
-            <li><a href="#">Доставили</a></li>
-          </ul>
+          <div class="footer-column-inner">
+            <ul class="footer-links">
+              <li><a href="#">Техно 2ГИС</a></li>
+              <li><a href="#">Работа в 2ГИС</a></li>
+              <li><a href="#">Купить франшизу</a></li>
+              <li><a href="#">Стать партнёром</a></li>
+              <li><a href="#">Контакты</a></li>
+            </ul>
+            <h4 class="footer-subheading footer-subheading--spaced">Что нового</h4>
+            <ul class="footer-links">
+              <li><a href="#">Пресс-центр</a></li>
+              <li><a href="#">Доставили</a></li>
+            </ul>
+          </div>
         </div>
 
         <!-- Колонка 4: Условия + Подписывайтесь -->
         <div class="footer-column">
           <h3 class="footer-heading" role="button" aria-expanded="false" tabindex="0">Условия использования</h3>
-          <ul class="footer-links">
-            <li><a href="#">Правовая информация</a></li>
-            <li><a href="#">Политика конфиденциальности</a></li>
-            <li><a href="#">Лицензионное соглашение</a></li>
-          </ul>
+          <div class="footer-column-inner">
+            <ul class="footer-links">
+              <li><a href="#">Правовая информация</a></li>
+              <li><a href="#">Политика конфиденциальности</a></li>
+              <li><a href="#">Лицензионное соглашение</a></li>
+            </ul>
+          </div>
           <div class="footer-telegram">
             <a href="#" class="footer-telegram-link">
               <svg class="icon-telegram" width="24" height="24" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -135,12 +139,9 @@
     </div>
   </div>
 
-  <!-- Нижняя часть: копирайт и контакты -->
+  <!-- Нижняя часть: контакты и копирайт (поменяны местами) -->
   <div class="footer-bottom">
     <div class="footer-container">
-      <div class="footer-copyright">
-        1999–2026 © 2ГИС. Все права защищены.
-      </div>
       <div class="footer-contacts">
         <div class="footer-contacts-heading">Если появятся вопросы</div>
         <div class="footer-contacts-row">
@@ -164,21 +165,22 @@
           </a>
         </div>
       </div>
+      <div class="footer-copyright">
+        1999–2026 © 2ГИС. Все права защищены.
+      </div>
     </div>
   </div>
 </footer>
 
 <!-- JavaScript для аккордеона -->
 <script>
-  // Простой скрипт для аккордеона на мобильном
   document.querySelectorAll('.footer-heading').forEach(header => {
     header.addEventListener('click', function() {
       const isExpanded = this.getAttribute('aria-expanded') === 'true';
       this.setAttribute('aria-expanded', !isExpanded);
       
-      // Находим следующий элемент (контент)
       const content = this.nextElementSibling;
-      if (content) {
+      if (content && content.classList.contains('footer-column-inner')) {
         content.classList.toggle('is-open');
       }
     });
